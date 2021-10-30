@@ -1,0 +1,9 @@
+.find-jobs {
+  .jobs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 34px;
+    padding: 0 143px;
+    margin-top: 50px;
+  }
+}

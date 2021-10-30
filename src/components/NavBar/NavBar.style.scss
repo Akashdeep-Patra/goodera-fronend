@@ -1,0 +1,25 @@
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  padding: 37px;
+  color: white;
+  background: linear-gradient(274.83deg, #5db0df 0.58%, #5d7adf 74.3%);
+  height: 364px;
+  .nav-route {
+    display: flex;
+    margin: 10px;
+    height: max-content;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    > * {
+      padding: 5px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    &.current {
+      border-bottom: 3px solid white;
+    }
+  }
+}
