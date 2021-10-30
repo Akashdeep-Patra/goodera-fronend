@@ -26,10 +26,17 @@ const ROUTES: Routetype[] = [
 ];
 function App() {
   const [currentRote, setCurrntRoute] = useState('/find-jobs');
+  const handleLinkClick = (link: string) => {
+    setCurrntRoute(link);
+  };
   return (
     <div className='App'>
-      <Navbar routes={ROUTES} currentRoute={currentRote} />
       <Router>
+        <Navbar
+          handleLinkClick={handleLinkClick}
+          routes={ROUTES}
+          currentRoute={currentRote}
+        />
         <Route path='/'>
           <Redirect to='/find-jobs'></Redirect>
         </Route>
