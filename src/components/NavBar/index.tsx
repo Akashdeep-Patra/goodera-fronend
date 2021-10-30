@@ -27,6 +27,10 @@ const Navbar: React.FC<NavProps> = ({
           </Link>
         </div>
       ))}
+      <h1 className='heading'>Find Your Dream Job</h1>
+      <p className='subhaeding'>
+        Browse through thousands of full-time & part-time jobs around you.{' '}
+      </p>
     </header>
   );
 };

@@ -1,11 +1,22 @@
 .nav {
   width: 100%;
+  position: relative;
   display: flex;
   justify-content: left;
   padding: 37px;
   color: white;
   background: linear-gradient(274.83deg, #5db0df 0.58%, #5d7adf 74.3%);
   height: 364px;
+  .heading {
+    position: absolute;
+    top: 142px;
+    left: 140px;
+  }
+  .subhaeding {
+    position: absolute;
+    top: 190px;
+    left: 140px;
+  }
   a {
     color: white;
     text-decoration: none;
